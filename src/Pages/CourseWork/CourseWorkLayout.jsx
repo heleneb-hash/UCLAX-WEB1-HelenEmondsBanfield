@@ -22,6 +22,7 @@ const CourseWorkLayout = () => {
 
 const CourseWorkLayoutStyled = styled.div`
     /* Add your styles for the CourseWorkLayoutStyled component here */
+    padding: 40px;
 `;
 
 export default CourseWorkLayout;
