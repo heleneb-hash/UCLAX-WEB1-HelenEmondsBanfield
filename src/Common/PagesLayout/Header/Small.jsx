@@ -19,7 +19,7 @@ const Small = () => {
 
     return (
         <SmallStyled>
-            <Hamburger toggle={toggle} role />
+            <Hamburger toggle={toggle} />
             <SiteLogo />
             {showMenu && <MainMenu onClick={hideMenu} />}
         </SmallStyled>
