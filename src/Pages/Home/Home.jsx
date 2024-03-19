@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Inset from "@/Common/PagesLayout/Inset.jsx";
 import Slideshow from "./Slideshow/Slideshow";
 import Tabbed from "./Tabbed/Tabbed";
+import LightBox from "../../Common/PagesLayout/Lightbox/LightBox.jsx";
 
 const Home = () => {
     return (
@@ -12,6 +13,9 @@ const Home = () => {
             <Inset>
                 <Tabbed />
             </Inset>
+            <div>
+                <LightBox />
+            </div>
         </HomeStyled>
     );
 };

@@ -19,4 +19,14 @@ const Header = () => {
 
 export default Header;
 
-const HeaderStyled = styled.header``;
+const HeaderStyled = styled.header`
+    background-color: #ffff;
+
+    .SiteLogo {
+        height: 300px;
+        display: inline;
+        align-items: left;
+        padding: 0px;
+        max-width: 330px;
+    }
+`;

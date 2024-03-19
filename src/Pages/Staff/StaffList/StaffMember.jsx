@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Accolades from "./Accolades/Accolades";
 
 const StaffMember = ({ member }) => {
-    const { name, image, yearStarted, accolades } = member;
+    const { name, image, accolades, price } = member;
     return (
         <StaffMemberStyled>
             <img src={image} alt={name} />
@@ -12,7 +12,7 @@ const StaffMember = ({ member }) => {
 
             <div className="bottom">
                 <p>
-                    <b>Year Started:</b> {yearStarted}
+                    <b>Price:</b> {price}
                 </p>
 
                 <Accolades accolades={accolades} />
@@ -42,7 +42,7 @@ const StaffMemberStyled = styled.div`
 
     h3 {
         color: white;
-        background-color: #014444;
+        background-color: #5b4e62;
         padding: 5px 10px;
         margin: 0px;
     }

@@ -9,7 +9,7 @@ const MainMenu = ({ onClick }) => {
                 <NavLink to={"/"} end>
                     Home
                 </NavLink>
-                <NavLink to={"/staff"}>Staff</NavLink>
+                <NavLink to={"/staff"}>Menu</NavLink>
                 <NavLink to={"/contact"}>Contact</NavLink>
                 <NavLink to={"/course-work"}>Course</NavLink>
             </nav>
@@ -24,4 +24,15 @@ MainMenu.propTypes = {
 
 export default MainMenu;
 
-const MainMenuStyled = styled.nav``;
+const MainMenuStyled = styled.nav`
+    .mainMenu {
+        width: 100%;
+        align: right;
+    }
+    .mainMenu a {
+        color: #5b4e62;
+    }
+    .mainMenu a.active {
+        color: #29232c;
+    }
+`;

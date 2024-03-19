@@ -19,4 +19,8 @@ Slide.propTypes = {
     slide: PropTypes.object.isRequired,
 };
 
-const SlideStyled = styled.div``;
+const SlideStyled = styled.div`
+    img {
+        max-width: 50% max-height 50%;
+    }
+`;

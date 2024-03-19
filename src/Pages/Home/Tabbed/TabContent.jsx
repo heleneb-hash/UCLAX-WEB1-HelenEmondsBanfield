@@ -8,12 +8,12 @@ const TabContent = ({ curTab }) => {
 
     return (
         <TabContentStyled>
-            <div className="column1">
+            <div>
                 <img src={image} alt={title} />
             </div>
-            <div className="column2">
+            <div>
                 <h3>{title}</h3>
-                <div dangerouslySetInnerHTML={{ __html: text }} />
+                <p>{text}</p>
             </div>
         </TabContentStyled>
     );
@@ -28,7 +28,7 @@ TabContent.propTypes = {
 
 const TabContentStyled = styled.div`
     padding: 20px;
-    background-color: teal;
+    background-color: #c1abce;
 
     @media ${breakpoints.isMediumAndUp} {
         display: grid;
@@ -39,18 +39,21 @@ const TabContentStyled = styled.div`
     img {
         max-width: 100%;
         display: block;
-        margin: 0px auto 15px;
+        margin: 20px auto 15px;
+        margin-bottom: none;
     }
 
     h3 {
         font-size: 30px;
         color: white;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     p {
         font-size: 18px;
-        color: #8cc6c6;
+        color: #5b4e62;
         margin-bottom: 20px;
-        line-height: 150%;
+        margin-left: 20px;
     }
 `;

@@ -5,8 +5,8 @@ import { Outlet, NavLink } from "react-router-dom";
 const CourseWorkLayout = () => {
     return (
         <CourseWorkLayoutStyled>
-            <h1>Course Work</h1>
             <Inset>
+                <h1>Course Work</h1>
                 <nav className="sublinks">
                     <NavLink to="/course-work">Essays</NavLink>
                     <NavLink to="/course-work/sun-and-moon">
@@ -20,9 +20,6 @@ const CourseWorkLayout = () => {
     );
 };
 
-const CourseWorkLayoutStyled = styled.div`
-    /* Add your styles for the CourseWorkLayoutStyled component here */
-    padding: 40px;
-`;
+const CourseWorkLayoutStyled = styled.div``;
 
 export default CourseWorkLayout;

@@ -32,7 +32,7 @@ const SunAndMoonStyled = styled.div`
     text-align: center;
     h2 {
         font-size: 30px;
-        color: teal;
+        color: #5b4e62;
     }
 
     img {
@@ -40,6 +40,6 @@ const SunAndMoonStyled = styled.div`
         margin: 30px auto;
         padding: 20px;
         border: solid 20px teal;
-        background-color: #005959;
+        background-color: #5b4e62;
     }
 `;

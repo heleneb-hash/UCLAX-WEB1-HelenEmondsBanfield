@@ -9,12 +9,12 @@ const MediumLarge = () => {
     return (
         <MediumLargeStyled className="MediumLarge">
             <Inset>
-                <div className="inset">
-                    <div className="logo">
+                <div className="row">
+                    <div className="column">
                         <SiteLogo />
                     </div>
-                    <div className="menus">
-                        <MainMenu />
+                    <div className="column">
+                        <MainMenu className="mainMenu" />
                     </div>
                 </div>
             </Inset>
@@ -29,10 +29,26 @@ const MediumLargeStyled = styled.header`
 
     .logo {
         .SiteLogo {
-            width: 25%;
-            margin: auto;
-            padding: 20px 0px;
+            width: 270px;
+            padding: 8px 0px;
         }
+        border: 5px solid red;
+    }
+
+    .mainMenu {
+        margin-top: 160px;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 
     nav {
@@ -40,11 +56,8 @@ const MediumLargeStyled = styled.header`
         a {
             width: 80px;
             display: inline-block;
-
             line-height: 30px;
             margin: 0px 0px 20px 5px;
-            border-bottom: solid 3px #84d4d4;
-
             text-align: center;
             font-size: 12px;
             opacity: 0.8;
@@ -61,7 +74,7 @@ const MediumLargeStyled = styled.header`
 
             &.active {
                 color: white;
-                border-bottom-color: white;
+                text-decoration: underline;
             }
         }
     }
